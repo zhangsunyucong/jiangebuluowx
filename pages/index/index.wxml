@@ -1,4 +1,3 @@
 <!--index.wxml-->
-<view>Hello {{name}}!</view>
 <image style="margin-left:30%;width: 200px; height: 200px; background-color: #eeeeee;" mode="{{mode}}" src="{{src}}"></image>
-<button bindtap='sayHello'>Click me to say Hello!</button>
+<button bindtap='sayHello'>Click me to choose a photo!</button>

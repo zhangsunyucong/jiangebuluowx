@@ -52,18 +52,9 @@ Page({
     })*/
     wx.chooseImage({
     success: function (res) {
-      wx.downloadFile({
-        url: 'http://ac-5ubk617r.clouddn.com/594f906b3bf3abc8d1fc.png',
-        success: function (res) {
-          if (res.statusCode === 200) {
-            wx.playVoice({
-              filePath: res.tempFilePath
-            })
-          }
-        },
-        fail: function(msg) {
-          console.log(msg);
-        }
+
+      wx.previewImage({
+        urls: res.tempFilePaths,
       })
     }
   });
