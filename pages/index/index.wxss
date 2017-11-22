@@ -39,7 +39,9 @@
 }
 
 .title {
-  color: #000000;
+  color: #000;
+  font-family: "微软雅黑";
+  font-weight: bold;
   line-height: 20rpx;
   padding: 32rpx 16rpx, 0, 16rpx;
   font-size: 24rpx;
