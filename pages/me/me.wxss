@@ -1,1 +1,35 @@
-/* pages/me/me.wxss */
+/* pages/me/me.wxss 
+background-color: #f4f4f4;*/
+.setting_list {
+    
+}
+
+.line {
+  height: 1px;
+  width: 94%;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  background-color: #e0e1e2;
+}
+
+.top_line {
+  height: 50rpx;
+  width: 100%;
+  background-color: #e0e1e2;
+}
+
+.item_text {
+  color: #000000;
+  padding: 32rpx 16rpx, 0, 16rpx;
+  font-size: 24rpx;
+  background-color: #fff;
+  overflow: hidden; /*自动隐藏文字*/
+  text-overflow: ellipsis; /*文字隐藏后添加省略号*/
+}
+
+.item_class {
+    padding-top: 20rpx;
+    padding-left: 20rpx;
+    min-height: 80rpx;
+}
+

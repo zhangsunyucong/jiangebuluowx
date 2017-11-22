@@ -1,0 +1,13 @@
+<!--pages/me/feedback/feedback.wxml-->
+<view  stytle=" overflow-x: hidden; overflow-y: auto; height:100%; ">
+  <textarea class='feedback_content_class'  placeholder='{{placeholder}}'
+     maxlength='{{maxlength}}' auto-focus></textarea>
+
+     <input class='input_class' placeholder="{{input_placeholder}}"/>
+     <view class='line'></view>
+
+     <view class='bottom'>
+        <button class='submit' bindtap='onSubmitClick'>提交</button>
+     </view>
+     
+</view>

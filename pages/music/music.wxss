@@ -1,1 +1,15 @@
-/* pages/music/music.wxss */
+
+.item1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.text {
+  color: #000;
+  font-size: 24rpx;
+}
+
+.message {
+  color: #808080;
+}

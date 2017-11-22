@@ -1,11 +1,13 @@
-// pages/me/me.js
+// pages/me/feedback/feedback.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    "placeholder": "亲爱的开发者：\n 使用俭哥部落后，我想对你吐槽一番~",
+    "maxlength": 150,
+    "input_placeholder": "输入你的联系方式（手机号、QQ等）"
   },
 
   /**
@@ -63,50 +65,9 @@ Page({
   onShareAppMessage: function () {
   
   },
-
-  onVitaeClick: function(event) {
-    wx.navigateTo({
-      url: './vitae/vitae',
-    })
-    
-  },
-
-  onFeedbackClick: function (event) {
-    wx.navigateTo({
-      url: './feedback/feedback',
-    })
-  },
-
-  onAboutClick: function (event) {
-    wx.navigateTo({
-      url: './about/about',
-    })
-  },
-
-  onClearDataClick: function(event) {
-    wx.showModal({
-      title: '系统提示',
-      content: '确定清除数据？',
-      success: function(res) {
-        if(res.confirm) {
-          wx.showToast({
-            title: '清除数据成功',
-          })
-        }
-      }
-    })
-    
-  },
-
-  onExitClick: function(event) {
-    wx.showModal({
-      title: '系统提示',
-      content: '确定退出程序？',
-      success: function (res) {
-        if (res.confirm) {
-          
-        }
-      }
+  onSubmitClick: function(event) {
+    wx.showToast({
+      title: '谢谢您的吐槽',
     })
   }
 })

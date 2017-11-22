@@ -1,0 +1,36 @@
+/* pages/me/feedback/feedback.wxss */
+
+.feedback_content_class {
+  width: 100%;
+  padding-top: 40rpx;
+  padding-left: 32rpx;
+  padding-right: 32rpx;
+  font-size: 26rpx;
+}
+
+.input_class{
+    margin-top: 300rpx;
+  width: 100%;
+  padding-left: 32rpx;
+  padding-right: 32rpx;
+  font-size: 26rpx;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: #e0e1e2;
+}
+
+.bottom {
+  width: 100%;
+  margin-bottom: 50rpx;
+  position:fixed; bottom:0;
+}
+
+.submit {
+  margin-left: 32rpx;
+  margin-right: 32rpx;
+  color: white;
+  background-color: #1afa29;
+}

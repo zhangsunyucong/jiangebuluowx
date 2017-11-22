@@ -1,3 +1,28 @@
-<!--index.wxml-->
-<image style="margin-left:30%;width: 200px; height: 200px; background-color: #eeeeee;" mode="{{mode}}" src="{{src}}"></image>
-<button bindtap='sayHello'>Click me to choose a photo!</button>
+<view  stytle=" overflow-x: hidden; overflow-y: auto; height:100%">
+  <view class="message_list">
+     <block wx:for="{{messages}}">
+        <navigator url="/pages/logs/logs?itemMotto={{item.motto}}&blogType={{item.blogType}}">
+          <view class="item" >
+             <view class="item-left">
+
+              <view class='row_one'>
+                 <view>
+                       <text class="title">{{item.cnName}}</text>
+                  </view>
+                  <view>
+                        <view><text class="blog_type">{{item.blogType}}</text></view>
+                  </view>
+              </view>
+               
+              <view>
+                  <text class="message">{{item.motto}}</text>
+              </view>
+               
+            </view>
+            
+         </view>
+         <view  class="line"></view>
+       </navigator>
+    </block>
+  </view>
+</view>

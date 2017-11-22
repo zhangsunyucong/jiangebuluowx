@@ -1,62 +1,47 @@
-//index.js
-//获取应用实例
-const app = getApp()
 
+/**  作者：Code4Android
+ *   项目地址：https://github.com/xiehui999/SmallAppForQQ
+ *   新浪微博：http://weibo.com/745687294
+ *   CSDN  :    http://blog.csdn.net/xiehuimx?viewmode=contents
+ *   简书   :   http://www.jianshu.com/users/d5b531888b2b/latest_articles
+ * */
+var focus
+var isShowView
+var api = require('../../utils/api.js')
 Page({
   data: {
-    name: 'world',
-    mode: 'scaleToFill',
-    src:'http://ac-5ubk617r.clouddn.com/594f906b3bf3abc8d1fc.png' 
+    // text:"这是一个页面"
+    focus: false,
+    isShowView: true,
+    messages: [{ cnName: "zhangsun"}]
   },
   onLoad: function (options) {
-    // Do some initialize when page load.
+    // 页面初始化 options为页面跳转所带来的参数
+    var that = this;
+    api.post(api.BASE_SERVER_URL + api.BLOG_INFO)
+      .then(result => {
+        if (result && result.data) {
+          console.log(result.data.data);
+          that.setData({ messages: result.data.data });
+        }
+    });
   },
   onReady: function () {
-    // Do something when page ready.
+    // 页面渲染完成
   },
   onShow: function () {
-    // Do something when page show.
+    // 页面显示
   },
   onHide: function () {
-    // Do something when page hide.
+    // 页面隐藏
   },
   onUnload: function () {
-    // Do something when page close.
-  },
-  onPullDownRefresh: function () {
-    // Do something when pull down.
-  },
-  onReachBottom: function () {
-    // Do something when page reach bottom.
+    // 页面关闭
   },
   onShareAppMessage: function () {
-    // return custom share data when user share.
-  },
-  onPageScroll: function () {
-    // Do something when page scroll
-  },
-  sayHello:function(e) {
-    /*wx.request({
-      url: "https://heyunjian.leanapp.cn/blog/getInfo",
-      success:function(res) {
-        wx.showToast({
-          title: 'success',
-        })
-      },
-      method: 'POST',
-      fail: function(error) {
-        wx.showToast({
-          title: 'fail',
-        })
-      }
-    })*/
-    wx.chooseImage({
-    success: function (res) {
-
-      wx.previewImage({
-        urls: res.tempFilePaths,
-      })
+    return {
+      title: '俭哥部落',
+      path: '/pages/index/index?id=123'
     }
-  });
   }
 })

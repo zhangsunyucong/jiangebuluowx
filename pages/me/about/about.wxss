@@ -1,0 +1,63 @@
+/* pages/me/about/about.wxss */
+
+.top_content_logo {
+  width: 100%;
+  margin-top: 90rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 16rpx;
+}
+
+.top_content_text {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logo {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.line {
+  height: 1px;
+  width: 94%;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  background-color: #e0e1e2;
+}
+
+.item {
+  
+}
+
+.top_content_txt {
+  font-family: "微软雅黑";
+  color: #808080;
+  font-size: 26rpx;
+  overflow: hidden; /**自动隐藏文字*/
+  text-overflow: ellipsis; /**文字隐藏后添加省略号*/
+  white-space: nowrap; /**强制不换行*/
+}
+
+.item_top {
+  margin-top: 60rpx;
+}
+
+.item_class {
+    padding-top: 20rpx;
+    padding-left: 20rpx;
+    min-height: 80rpx;
+}
+
+.item_text {
+  color: #000;
+  font-family: "微软雅黑";
+  padding: 32rpx 16rpx, 0, 16rpx;
+  font-size: 24rpx;
+  background-color: #fff;
+  overflow: hidden; /*自动隐藏文字*/
+  text-overflow: ellipsis; /*文字隐藏后添加省略号*/
+}

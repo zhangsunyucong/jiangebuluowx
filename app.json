@@ -1,12 +1,50 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/music/music",
+    "pages/map/map",
+    "pages/me/me",
+    "pages/logs/logs",
+    "pages/me/vitae/vitae",
+    "pages/me/about/about",
+    "pages/me/feedback/feedback"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f4f4f4",
     "navigationBarTitleText": "俭哥部落",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#9B9DB1",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/home_normal.png",
+        "selectedIconPath": "images/home_selected.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/music/music",
+        "iconPath": "images/music_normal.png",
+        "selectedIconPath": "images/music_selected.png",
+        "text": "音乐"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "iconPath": "images/service_normal.png",
+        "selectedIconPath": "images/service_selected.png",
+        "text": "地图"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "images/mine_normal.png",
+        "selectedIconPath": "images/mine_selected.png",
+        "text": "我"
+      }
+    ]
   }
 }

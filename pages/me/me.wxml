@@ -1,2 +1,47 @@
 <!--pages/me/me.wxml-->
-<text>pages/me/me.wxml</text>
+<view  stytle=" overflow-x: hidden; overflow-y: auto; height:100%; ">
+  <view class='top_line'></view>
+
+  <view class='setting_list'>
+    <view class='item_class' bindtap='onVitaeClick'>
+      <text class='item_text'>我的简历</text>
+    </view>
+     <view class='line'></view>
+
+     <view class='item_class'>
+      <text class='item_text'>浏览器</text>
+    </view>
+     <view class='line'></view>
+
+     <view class='item_class'>
+      <text class='item_text'>照片墙</text>
+     </view>
+     <view class='line'></view>
+
+     <view class='top_line'></view>
+
+     <view class='item_class' bindtap='onClearDataClick'>
+      <text class='item_text'>清除数据</text>
+     </view>
+     <view class='line'></view>
+
+      <view class='item_class' bindtap='onFeedbackClick'>
+      <text class='item_text'>意见反馈</text>
+     </view>
+     <view class='line'></view>
+
+      <view class='item_class' bindtap='onAboutClick'>
+      <text class='item_text'>关于</text>
+     </view>
+     <view class='line'></view>
+
+    <view class='top_line'></view>
+
+    <view class='item_class' bindtap='onExitClick'>
+        <text class='item_text'>退出</text>
+    </view>
+
+     <view class='line'></view>
+  </view>
+
+</view>

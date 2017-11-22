@@ -1,2 +1,17 @@
 <!--pages/music/music.wxml-->
-<text>pages/music/music.wxml</text>
+<view  stytle=" overflow-x: hidden; overflow-y: auto; height:100%">
+  <view class="item1" >
+        <view>
+              <text class="text">关于socket的使用效果，是一个socket聊天室。</text>
+        </view>
+                  
+        <view>
+              <text class="text">1、android端源码：\n https://github.com/zhangsunyucong/MVPDemo</text>
+        </view>
+
+        <view>
+              <text class="text">2、nodejs服务器源码：\nhttps://github.com/zhangsunyucong/NodeTestDemo</text>
+        </view>
+   </view>
+
+</view>

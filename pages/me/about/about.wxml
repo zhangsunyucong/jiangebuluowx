@@ -1,0 +1,48 @@
+<!--pages/me/about/about.wxml-->
+<view  stytle=" overflow-x: hidden; overflow-y: auto; height:100%; ">
+
+  <view class='top_content_logo'>
+      <image class='logo' src='../../../images/ic_launcher.png'></image>
+      
+  </view>
+
+  <view class='top_content_text'>
+      <text class='top_content_txt'>俭哥部落</text>
+  </view>
+
+  <view class='middle_content'>
+    <view class='item_top'>
+      <view class='item_class'>
+        <text class='item_text'>功能介绍</text>
+      </view>
+    <view class='line'></view>
+    </view>
+
+    <view class='item'>
+      <view class='item_class'>
+        <text class='item_text'>投诉</text>
+      </view>
+    <view class='line'></view>
+    </view>
+
+    <view class='item'>
+      <view class='item_class'>
+        <text class='item_text'>分享给朋友</text>
+      </view>
+    <view class='line'></view>
+    </view>
+
+    <view class='item'>
+      <view class='item_class'>
+        <text class='item_text'>检查新版本</text>
+      </view>
+    <view class='line'></view>
+    </view>
+
+  </view>
+
+  <view class='bottom_content'>
+
+  </view>
+
+</view>
